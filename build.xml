@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="walmart" default="compile">
+<target name ="info">
+<echo>info block executed</echo>
+</target>
+<target name="target1" depends="info">
+<echo>target1 block got executed</echo>
+</target>
+<target name="compile" depends="target1">
+<echo>compile block got executed</echo>
+</target>
+</project>
